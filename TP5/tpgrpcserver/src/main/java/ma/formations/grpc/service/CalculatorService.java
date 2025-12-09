@@ -153,6 +153,41 @@ public class CalculatorService extends CalculatorServiceGrpc.CalculatorServiceIm
 
 
 
+    @Override
+    public StreamObserver<Calculator.ClientStreamRequest> performStream(
+            StreamObserver<Calculator.ClientStreamResponse> responseObserver) {
+
+        return new StreamObserver<Calculator.ClientStreamRequest>() {
+
+            final List<Double> receivedData = new ArrayList<>();
+            double result = 0;
+
+            @Override
+            public void onNext(Calculator.ClientStreamRequest request) {
+                result += request.getA();
+                receivedData.add(request.getA());
+            }
+
+            @Override
+            public void onError(Throwable throwable) {
+                throwable.printStackTrace();
+            }
+
+            @Override
+            public void onCompleted() {
+                Calculator.ClientStreamResponse.Builder response =
+                        Calculator.ClientStreamResponse.newBuilder();
+
+                response.setResult(result);
+                receivedData.forEach(response::addReceivedData);
+
+                responseObserver.onNext(response.build());
+                responseObserver.onCompleted();
+            }
+        };
+    }
+
+
 
 
 }
