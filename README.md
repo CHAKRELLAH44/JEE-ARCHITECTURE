@@ -191,7 +191,7 @@
 |-------------|---------|----------|---------|------------|-----------------|
 | **REST** | JSON | ⚡⚡ | Non strict | Simple | APIs modernes |
 | **gRPC** | Protobuf (binaire) | ⚡⚡⚡⚡ | .proto strict | Technique | Microservices rapides |
-| **GraphQL** | Requêtes textuelles | ⚡⚡⚡ | Schéma flexible | Moyenne | Apps flexibles |
+| **GraphQL** | Requêtes textuelles | ⚡⚡⚡ | .graphql Schéma flexible | Moyenne | Apps flexibles |
 | **SOAP** | XML + enveloppe SOAP | ⚡ | WSDL strict | Très complexe | Banques, systèmes anciens |
 
 ---
@@ -240,6 +240,4 @@
 
 ### TP12 : En cours
 
----
 
-*Document généré pour usage pédagogique - Date de mise à jour : 2025*
