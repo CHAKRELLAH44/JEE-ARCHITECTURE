@@ -218,17 +218,17 @@
 
 ### TP1 : Projet
 
-### TP2 : Projet + Compte Rendu + Explication (Darija)
+### TP2 : Projet + Compte Rendu + Explication 
 
-### TP3 : Projet + Compte Rendu + Explication (Darija)
+### TP3 : Projet + Compte Rendu + Explication 
 
-### TP4 : Projet + Compte Rendu + Explication (Darija)
+### TP4 : Projet + Compte Rendu + Explication 
 
-### TP5 : Projet + Compte Rendu + Explication (Darija)
+### TP5 : Projet + Compte Rendu + Explication 
 
-### TP6 : Projet + Compte Rendu + Explication (Darija)
+### TP6 : Projet + Compte Rendu + Explication 
 
-### TP7 : À définir
+### TP7 : Projet + Compte Rendu + Explication 
 
 ### TP8 : Projet
 
