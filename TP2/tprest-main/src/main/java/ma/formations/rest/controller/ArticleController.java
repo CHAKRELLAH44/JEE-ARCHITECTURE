@@ -20,6 +20,7 @@ public class ArticleController {
 
     @GetMapping(value = "/all", produces = {MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE})
     public List<ArticleDTO> getAll() {
+
         return service.getAll();
     }
 
